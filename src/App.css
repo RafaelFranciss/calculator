@@ -1,38 +1,106 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: black;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CalcContainer {
+  width: 100%;
+  max-width: 450px; 
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  background-color: #2d4f4e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Display {
+  background-color: #1fb1aa;
+  text-align: right;
+  padding: 20px; 
+  font-size: 2.2rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #2c3e50; 
+}
+
+.ButtonsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.ButtonKeys {
+  padding: 15px;
+  font-size: 1.3rem;
+  background-color: #97a7a7;
+  border-radius: 8px;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ButtonKeys:hover {
+  background-color: #bac2c7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.OperatorButton {
+  background-color: #629584;
+  color: white;
+  border: none;
+}
+
+.OperatorButton:hover {
+  background-color: #4d8874;
+}
+
+.ClearButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.ClearButton:hover {
+  background-color: #c0392b;
+}
+
+.EqualsButton {
+  background-color: #64b3f1;
+  color: white;
+  border: none;
+}
+
+.EqualsButton:hover {
+  background-color: #50a3e2;
+}
+
+.Surname {
+  margin-top: 30px;
+}
+
+.Surname .OperatorButton {
+  width: 100%;
+  background-color: #629584;
+  color: white;
+}
+
+.Surname .OperatorButton:hover {
+  background-color: #4d8874;
 }
